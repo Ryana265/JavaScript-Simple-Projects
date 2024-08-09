@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1>Table</h1>
+    <table border="2" width="50%" bordercolor="black" >
+        <thead >
+            <tr>
+                <th>Id</th>
+                <th>Product</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="text-align: center;">200043</td>
+                <td><img width="50px" height="50px" style="padding-left: 40%;" src="https://t4.ftcdn.net/jpg/07/70/60/47/360_F_770604704_7BNAEzoPWpUg2q1vdAdHoI6fGVDlgsiz.jpg" alt=""></td>
+                <td><i  id="icon1" onclick="bin1click()" class="fa fa-trash" style="font-size:36px;color:rgb(0, 0, 0);padding-left: 40%;"></i></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">200043</td>
+                <td><img width="50px" height="50px" style="padding-left: 40%;" src="https://t4.ftcdn.net/jpg/07/70/60/47/360_F_770604704_7BNAEzoPWpUg2q1vdAdHoI6fGVDlgsiz.jpg" alt=""></td>
+                <td><i id="icon2" onclick="bin2click()" class="fa fa-trash" style="font-size:36px;color:rgb(0, 0, 0);padding-left: 40%;"></i></td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+
+        function bin1click(){
+        const bin1=document.getElementById("icon1");
+        //console.log("bin1");
+        console.log("User confirmed the action");
+        }
+        function bin2click(){
+        const bin2=document.getElementById("icon2");
+        //console.log("bin2");
+        console.log("User canceled the action");
+        }
+    </script>
+</body>
+</html>
