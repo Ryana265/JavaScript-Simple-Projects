@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="Calculator">
+        <input type="text" id="display" readonly>
+        <div id="keys">
+            <button onclick="displayNumber('+')" class="operator-btn">+</button>
+            <button onclick="displayNumber(7)">7</button>
+            <button onclick="displayNumber(8)">8</button>
+            <button onclick="displayNumber(9)">9</button>
+            <button onclick="displayNumber('-')" class="operator-btn">&#8722</button>
+            <button onclick="displayNumber(4)">4</button>
+            <button onclick="displayNumber(5)">5</button>
+            <button onclick="displayNumber(6)">6</button>
+            <button onclick="displayNumber('*')" class="operator-btn">&#215</button>
+            <button onclick="displayNumber(1)">1</button>
+            <button onclick="displayNumber(2)">2</button>
+            <button onclick="displayNumber(3)">2</button>
+            <button onclick="displayNumber('/')" class="operator-btn">&#247</button>
+            <button onclick="displayNumber(0)">0</button>
+            <button onclick="displayNumber('00')">00</button>
+            <button onclick="displayNumber('.')">.</button>
+            <button onclick="clearBox()" id="result" class="operator-btn">Ac</button>
+            <button onclick="removeLastItem('')">&#9003</button>
+            <button onclick="evaluateExp()">&#61</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
