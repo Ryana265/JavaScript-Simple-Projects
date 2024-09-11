@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="card">
+        <div class="input container">
+        <h1 class="text-center" >Discount Calculator</h1>
+            <div class="input1">
+                <label for="billAmount">Enter Bill Amount</label>
+                <input class="form-control" id="billAmount" type="text">
+            </div>
+            
+            <div class="input3">
+                <label for="discountPercentage">Select Discount %</label>
+                <select class="form-control" name="" id="discountPercentage"  >
+                    <option  value="0">0</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="25">25</option>
+                    <option value="" disabled selected> Choose Amount</option>
+                </select>
+            </div>
+            <div class="input2">
+                <label for="discountAmount">Discount Amount</label>
+                <input class="form-control" id="discountAmount"  type="text" disabled>
+            </div>
+            <div class="input4">
+                <label  for="finalPay">Final Pay</label>
+                <input class="form-control" type="text" disabled id="finalPay">
+            </div>
+            <div class="button-group">
+                <button  onclick="calculate()">Calculate</button>
+                <br>
+                <button  onclick="reset()">Reset</button>
+              </div>
+          </div>
+        </div>
+    
+    
+</body>
+<script src="script.js"></script>
+</html>
